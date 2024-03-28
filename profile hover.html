@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+
+}
+img{
+    height: 500px;
+    width:350px;
+    border-radius: 3px;
+    transition: .5s;
+    
+}
+.container{
+    display: flex;
+
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: whitesmoke;
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 130px;
+    width: 350px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:110px;
+    background: rgba(74, 71, 71, 0.5);
+    colour:rgb(227, 8, 8);
+    transition: .5s;
+
+
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+    color: beige;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    margin: 20px;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover  .intro{
+    height:200px;
+    bottom:90px;
+    background: rgb(236, 230, 230);
+}
+.card:hover p{
+    opacity: 1;
+    visibility:visible;
+
+}
+.card:hover h1{
+    color: black;
+}
+.card:hover img{
+    transform:scale(1.1) rotate(-3deg);
+}
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="img1.jpg" alt="ceetah" >
+            <div class="intro">
+             <h1>Onyinye Blessing Anago</h1>  
+             <p>Home page, Feedback</p> 
+             <p>Content page, Page Editor</p>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="img2.jpg" alt="mandrill" >
+            <div class="intro">
+             <h1>Abdullah</h1>  
+             <p>user profile, team </p>
+             <p>content, page editor</p>
+             
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="img3.jpg" alt="royel bangal" >
+            <div class="intro">
+             <h1>Shree Dharshan Santhagunam</h1>  
+             <p>User Profile,Team</p>
+             <p>content page, Page Editor</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
